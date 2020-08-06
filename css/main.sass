@@ -22,6 +22,7 @@ body
     background-position: center
     background-repeat: no-repeat
     position: relative
+    //overflow: hidden
     .nav-composition
         display: flex
         margin: 0 150px
@@ -125,6 +126,7 @@ section, footer
     position: relative
     overflow-x: hidden
     background-color: #000
+    
 .composition-main-content
     color: #ffffff
     display: flex
@@ -242,11 +244,56 @@ section, footer
                     
 
         
-@media (max-width: 950px)
-    .login-wrapper
-        width: 50%
-        .login-form
-            width: 350px
-    .main-login 
-        .image-wrapper  
-            width: 47%
+@media (max-width: 770px)
+    .s-clock
+        padding: 0 25px 
+        .name-wrapper-clock
+            font-size: 28px
+            width: 250px
+        .image-text-wrapper-clock
+            .price-discount-clock
+                font-size: 24px
+            .discount-value
+                font-size: 24px 
+            img
+                width: 60%
+    .content-footer
+        .logo-footer
+            width: 300px 
+        .nav-footer 
+            ul 
+                li
+                    margin-right: 14px 
+                    a
+                        font-size: 18px
+    .composition-main-content 
+        .first-text-main 
+            p
+                font-size: 15px
+@media (max-width: 375px)
+    .s-main
+        display: none
+    .s-clock
+        padding: 0 25px 
+        .name-wrapper-clock
+            font-size: 18px
+            width: 355px
+        .image-text-wrapper-clock
+            .price-discount-clock
+                font-size: 14px
+            .discount-value
+                font-size: 14px 
+            img
+                width: 100%
+    .slider-wrapper
+        .review-wrapper
+            width: 380px
+    .main-header
+        overflow: hidden
+        .text-composition
+            margin: 0 25px
+            .h1
+                font-size: 24px
+            p
+                font-size: 16px
+                width: 250px

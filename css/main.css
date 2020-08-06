@@ -367,15 +367,72 @@ section, footer {
   color: #FF5923;
 }
 
-@media (max-width: 950px) {
-  .login-wrapper {
-    width: 50%;
+@media (max-width: 770px) {
+  .s-clock {
+    padding: 0 25px;
   }
-  .login-wrapper .login-form {
-    width: 350px;
+  .s-clock .name-wrapper-clock {
+    font-size: 28px;
+    width: 250px;
   }
-  .main-login .image-wrapper {
-    width: 47%;
+  .s-clock .image-text-wrapper-clock .price-discount-clock {
+    font-size: 24px;
+  }
+  .s-clock .image-text-wrapper-clock .discount-value {
+    font-size: 24px;
+  }
+  .s-clock .image-text-wrapper-clock img {
+    width: 60%;
+  }
+  .content-footer .logo-footer {
+    width: 300px;
+  }
+  .content-footer .nav-footer ul li {
+    margin-right: 14px;
+  }
+  .content-footer .nav-footer ul li a {
+    font-size: 18px;
+  }
+  .composition-main-content .first-text-main p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .s-main {
+    display: none;
+  }
+  .s-clock {
+    padding: 0 25px;
+  }
+  .s-clock .name-wrapper-clock {
+    font-size: 18px;
+    width: 355px;
+  }
+  .s-clock .image-text-wrapper-clock .price-discount-clock {
+    font-size: 14px;
+  }
+  .s-clock .image-text-wrapper-clock .discount-value {
+    font-size: 14px;
+  }
+  .s-clock .image-text-wrapper-clock img {
+    width: 100%;
+  }
+  .slider-wrapper .review-wrapper {
+    width: 380px;
+  }
+  .main-header {
+    overflow: hidden;
+  }
+  .main-header .text-composition {
+    margin: 0 25px;
+  }
+  .main-header .text-composition .h1 {
+    font-size: 24px;
+  }
+  .main-header .text-composition p {
+    font-size: 16px;
+    width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */
