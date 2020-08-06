@@ -14,6 +14,7 @@ body
     padding: 0
     
     
+    
 .main-header
     min-height: 755px
     height: 100%
@@ -242,8 +243,143 @@ section, footer
                     &:hover
                         color: #FF5923
                     
+.xs-nav-menu
+    position: fixed
+    right: -250px
+    top: 0
+    width: 250px
+    height: 100%
+    display: none
+    background-color: #000
+    ul
+        list-style-type: none
+        li
+            display: inline-block
+            margin-bottom: 15px
+            border-bottom: 2px solid #fff
+            a
+                text-decoration: none
+                color: #ffffff
+                font-size: 24px
+.xs-nav-menu-active
+    position: fixed
+    right: 0
+    display: block
+    z-index: 999
+    top: 0
+    width: 250px
+    height: 100%
+    background-color: #000
+    opacity: 0;
+    ul
+        list-style-type: none
+        li
+            display: inline-block
+            margin-bottom: 15px
+            border-bottom: 2px solid #fff
+            a
+                text-decoration: none
+                color: #ffffff
+                font-size: 24px
 
-        
+.add-review
+    display: flex
+    flex-direction: column
+    align-items: center
+    .label-wrapper-review
+        text-align: center
+        label
+            font-family: 'Montserrat'
+            font-size: 18px
+            display: inline-block
+            margin-bottom: 15px
+        input
+            background-color: transparent
+            border: none
+            border-bottom: 2px solid #FF5923
+            display: inline-block
+            margin-bottom: 15px
+            outline: none
+            color: #ffffff
+            font-size: 18px
+            padding: 0 10px
+    button
+        font-size: 18px
+        font-family: 'Montserrat'
+        color: #ffffff
+        background-color: #FF5923
+        padding: 5px 15px
+        border: none
+        border-radius: 5px
+        cursor: pointer
+.message-form
+    font-family: 'Montserrat'
+    font-size: 18px
+    width: 50%
+    text-align: center
+    opacity: 0
+    display: none
+    transition: .5s ease
+    span
+        color: #ff5923
+.message-form-active
+    font-family: 'Montserrat'
+    font-size: 18px
+    width: 50%
+    text-align: center
+    display: inline-block
+    opacity: 1
+    transition: .5s ease
+    span
+        color: #ff5923
+.db
+    display: block
+.dn
+    display: none
+.dib
+    display: inline-block
+
+.s-main-xs
+    display: none
+    flex-direction: column
+    align-items: center
+    color: #ffffff
+    .h1
+        font-family: 'Montserrat'
+        font-size: 18px
+    .list-stile-xs-wrapper
+        display: inline-block
+        text-align: center
+        width: 550px
+        position: relative
+        p
+            font-size: 14px
+            font-family: 'Montserrat'
+            color: #FF5923
+            margin-bottom: 35px
+            span
+                display: inline-block
+                width: 10px
+                height: 10px
+                background: #FF5923;
+                filter: blur(4px);
+                margin-right: 5px
+        .p-left
+            position: relative
+            left: -5px
+        .p-right
+            position: relative
+            right: -5px
+
+
+@media (max-width: 820px)
+    .link-xs-nav 
+        display: block
+    .main-nav
+        display: none
+    .nav-footer
+        display: none
+    
 @media (max-width: 770px)
     .s-clock
         padding: 0 25px 
@@ -270,11 +406,18 @@ section, footer
         .first-text-main 
             p
                 font-size: 15px
-@media (max-width: 375px)
+@media (max-width: 680px)
+    .main-header 
+        .nav-composition
+            margin: 0 34px
     .s-main
         display: none
+    .s-main-xs
+        display: flex
     .s-clock
-        padding: 0 25px 
+        display: block
+        text-align: center
+        padding: 0 15px 
         .name-wrapper-clock
             font-size: 18px
             width: 355px
@@ -297,3 +440,6 @@ section, footer
             p
                 font-size: 16px
                 width: 250px
+@media (min-width: 821px)
+    .link-xs-nav 
+        display: none

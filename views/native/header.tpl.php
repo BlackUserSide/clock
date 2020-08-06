@@ -1,6 +1,6 @@
 <div class="nav-composition">
     <div class="logo-wrapper">
-        <img src="/img/logo.png" alt="">
+        <a href="/"><img src="/img/logo.png" alt=""></a>
     </div>
     <nav class="main-nav">
         <ul>
@@ -10,5 +10,19 @@
 
         </ul>
     </nav>
-    
+    <div class="link-xs-nav">
+        <div class="hamburger hamburger--emphatic button-xs-menu">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="xs-nav-menu" id="smallNav">
+        <ul>
+            <li><a href="#">Main</a></li><br>
+            <li><a href="#">About us</a></li><br>
+            <li><a href="#">Catalog</a></li>
+        </ul>
+    </nav>
 </div>
