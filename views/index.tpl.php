@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/libs/slick/slick/slick.css">
     <link rel="stylesheet" href="/libs/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="/libs/humberger/hamburgers.min.css">
+    <link rel="stylesheet" href="/libs/themes/dark.css">
+    <link rel="stylesheet" href="/libs/jquery.arcticmodal-0.3.css">
     <title><?php echo $pageData['title'] ?></title>
 </head>
 
@@ -41,6 +44,20 @@
                 <p>To the study and meeting room</p>
                 <p>Corporate VIP gifts</p>
             </div>
+        </div>
+    </section>
+    <section class="s-main-xs">
+        <h1 class="h1">Time stands still with us</h1>
+        <div class="image-wrapper-main-xs">
+            <img src="/img/xs-main.png" alt="">
+        </div>
+        <div class="list-stile-xs-wrapper">
+            <p class="p-left"><span></span> To your house or apartment</p>
+            <p class="p-right"><span></span> For a loved one and friend</p>
+            <p class="p-left"><span></span> For birthday and new year</p>
+            <p class="p-right"><span></span> To your house or apartment</p>
+            <p class="p-left"><span></span> To the study and meeting room</p>
+            <p class="p-right"><span></span> Corporate VIP gifts</p>
         </div>
     </section>
     <section class="s-clock">
@@ -83,24 +100,33 @@
             <a href="#" class="link-add-review">WRITE A REVIEW</a>
         </div>
     </section>
-    <footer class="site-footer">
-        <div class="content-footer">
-            <div class="logo-footer">
-                <img src="/img/footer-logo.png" alt="">
-            </div>
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="/">Main</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Catalog</a></li>
-                </ul>
-            </nav>
+    <?php include ROOT .'/views/native/footer.php' ?>
+    <div style="display: none">
+        <div class="hidden-form-review box-modal">
+            <form class="add-review">
+                <div class="label-wrapper-review">
+                    <label>Enter your review</label><br>
+                    <input type="text" name="textReview" required>
+                </div>
+                <div class="label-wrapper-review">
+                    <label>Enter your name</label><br>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="label-wrapper-review">
+                    <label>Enter your position</label><br>
+                    <input type="text" name="position" required>
+                </div>
+                <button type="submit">Submit</button>
+                <p class="message-form"><span>Thanks for your feedback,</span> we are trying to be better for you</p>
+            </form>
+            <div class="box-modal_close arcticmodal-close" style="font-size: 22px;">X</div>
         </div>
-
-    </footer>
+    </div>
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/libs/slick/slick/slick.min.js"></script>
+    <script src="/libs/jquery.arcticmodal-0.3.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
