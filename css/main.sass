@@ -13,7 +13,9 @@ body
     margin: 0
     padding: 0
     
-    
+#header-catalog
+    min-height: auto 
+    background: #000  
     
 .main-header
     min-height: 755px
@@ -370,6 +372,157 @@ section, footer
         .p-right
             position: relative
             right: -5px
+
+#left-reverse
+    flex-direction: row-reverse
+    .image-product
+        width: 550px
+        height: 280px
+        border-bottom: 3px solid #FF5923
+        border-left: 3px solid #FF5923
+        border-right: 0
+    .text-item-wrapper
+        padding-left: 0px
+        padding-right: 30px
+.product-wrapper
+    margin: 0 150px
+.item-wrapper-product
+    color: #ffffff
+    display: flex
+    flex-direction: row
+    margin-bottom: 100px
+    
+    .image-product
+        width: 550px
+        height: 320px
+        overflow: hidden
+        border-bottom: 3px solid #FF5923
+        border-right: 3px solid #FF5923
+        img
+            width: 100%
+    .text-item-wrapper
+        padding-left: 30px
+        display: flex
+        flex-direction: column
+        .name-wrapper
+            .h1
+                font-family: 'Montserrat'
+                font-style: 500
+                font-size: 48px
+                color: #FF5923
+                margin: 0
+                padding: 0
+                margin-bottom: 15px
+        .description-wrapper-item
+            padding: 10px 0
+            width: 600px
+            position: relative
+            margin-bottom: 15px
+            p
+                font-family: 'Montserrat'
+                font-size: 16px
+            &::after
+                content: ''
+                position: absolute
+                background-color: #FF5923
+                width: 40%
+                height: 3px
+                display: inline-block
+                bottom: 0
+                left: 0
+        .last-line-product
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            .discount-price-full
+                font-family: 'DigitalNumbers'
+                font-size: 24px
+                color: #8C8C8C
+                text-decoration-line: line-through;
+                margin: 0
+            .discount-price-item
+                font-family: 'DigitalNumbers'
+                font-size: 32px
+                color: #FF5923
+                margin: 0
+            .price-full
+                font-family: 'DigitalNumbers'
+                font-size: 32px
+                color: #FF5923
+                margin: 0
+            .buy-link
+                display: inline-block
+                text-transform: uppercase
+                padding: 10px 35px
+                color: #ffffff
+                text-decoration: none
+                background-color: #FF5923
+                border-radius: 5px
+
+
+        
+.hidden-form-buy
+    .product-composition
+        display: flex
+        padding: 10px 25px
+        justify-content: space-between
+        border-top: 2px solid #ff5923
+        border-bottom: 2px solid #ff5923
+        margin-bottom: 15px
+        
+        .image-wrapper-buy
+            width: 150px
+            height: 150px
+            img
+                width: 100%
+        .text-wrapper-buy
+            h3
+                font-size: 22px
+                color: #FF5923
+                text-transform: uppercase
+                font-family: 'Montserrat'
+    .label-wrapper-buy
+        label
+            display: inline-block
+            margin-right: 10px
+            font-size: 18px
+            
+            font-family: 'Montserrat'
+        input
+            display: inline-block
+            border: none
+            width: 30px
+            border-radius: 25px
+            height: 18px
+            font-size: 18px
+            font-weight: 700
+            padding: 2px 5px
+            text-align: center
+            font-family: 'Montserrat'
+            outline: none
+        margin-bottom: 15px
+    button
+        font-size: 18px
+        font-family: 'Montserrat'
+        color: #ffffff
+        background-color: #FF5923
+        padding: 5px 15px
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        margin-right: 20px
+    .remove-buy-form
+        display: inline-block
+        font-size: 18px
+        font-family: 'Montserrat'
+        color: #ffffff
+        background-color: #E81700
+        padding: 5px 15px
+        border: none
+        border-radius: 5px
+        text-decoration: none
+        
+
 
 
 @media (max-width: 820px)

@@ -100,27 +100,7 @@
             <a href="#" class="link-add-review">WRITE A REVIEW</a>
         </div>
     </section>
-    <footer class="site-footer">
-        <div class="content-footer">
-            <div class="logo-footer">
-                <img src="/img/footer-logo.png" alt="">
-            </div>
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="/">Main</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Catalog</a></li>
-                </ul>
-            </nav>
-            <div class="link-xs-nav">
-                <div class="hamburger hamburger--emphatic button-xs-menu">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include ROOT .'/views/native/footer.php' ?>
     <div style="display: none">
         <div class="hidden-form-review box-modal">
             <form class="add-review">

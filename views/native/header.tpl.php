@@ -4,9 +4,9 @@
     </div>
     <nav class="main-nav">
         <ul>
-            <li><a href="#" class="link-nav">Main</a></li>
-            <li><a href="#" class="link-nav">About us</a></li>
-            <li><a href="#" class="link-nav">Catalog</a></li>
+            <li><a href="/" class="link-nav">Main</a></li>
+            <li><a href="/aboutus" class="link-nav">About us</a></li>
+            <li><a href="/catalog" class="link-nav">Catalog</a></li>
 
         </ul>
     </nav>
@@ -20,9 +20,9 @@
 
     <nav class="xs-nav-menu" id="smallNav">
         <ul>
-            <li><a href="#">Main</a></li><br>
-            <li><a href="#">About us</a></li><br>
-            <li><a href="#">Catalog</a></li>
+            <li><a href="/">Main</a></li><br>
+            <li><a href="/aboutus">About us</a></li><br>
+            <li><a href="/catalog">Catalog</a></li>
         </ul>
     </nav>
 </div>
