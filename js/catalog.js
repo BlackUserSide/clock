@@ -8,7 +8,12 @@ $(document).ready(function () {
             i++
         });
     }
-    reverse();
+    if ($(window).width() <= '480') {
+
+    } else {
+        reverse();
+    }
+    
     $('.buy-link').click(function (e) {
         e.preventDefault();
         let id = $(this).attr('id');
@@ -46,6 +51,20 @@ $(document).ready(function () {
         e.preventDefault();
         localStorage.clear();
         location.reload();
+    })
+    $('.image-product img').click(function () {
+        $('.hidden-art').arcticmodal({
+            beforeClose: function(data, el) {
+                $(".full-image-catalog").remove()
+            },
+        });
+        let src = $(this).attr('img-src');
+        let html = `<img src="/img/product/${src}" class="full-image-catalog" alt=""/>`;
+        $('.hidden-art').prepend(html);
+    })
+    $('button').click(function (e) {
+        e.preventDefault();
+        $(location).attr('href', '/order');
     })
     
 })

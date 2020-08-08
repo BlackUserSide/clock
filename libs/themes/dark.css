@@ -10,3 +10,8 @@
 }
 .box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
 .box-modal_close:hover { color: #6897bb; }
+@media (max-width: 480px) {
+	.box-modal {
+		width: inherit;
+	}
+}

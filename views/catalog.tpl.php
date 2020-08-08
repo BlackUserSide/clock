@@ -22,7 +22,8 @@
             <?php foreach ($pageData['dataProduct'] as $key => $val) { ?>
                 <div class="item-wrapper-product">
                     <div class="image-product">
-                        <img src="/img/product/<?php echo $val['image'] ?>" alt="">
+                        <img src="/img/product/<?php echo $val['image'] ?>" img-src="<?php echo $val['image'] ?>" alt="">
+                        <p>Click to to enlarge</p>
                     </div>
                     <div class="text-item-wrapper">
                         <div class="name-wrapper">
@@ -72,6 +73,11 @@
             <button type="submit">Confirm</button>
             <a href="#" class="remove-buy-form">Clear</a>
             <div class="box-modal_close" style="font-size: 22px;">x</div>
+        </div>
+    </div>
+    <div style="display: none">
+        <div class="hidden-art box-modal">
+
         </div>
     </div>
     <script src="/js/jquery-3.5.1.min.js"></script>

@@ -521,10 +521,202 @@ section, footer
         border: none
         border-radius: 5px
         text-decoration: none
+.hidden-art
+    width: 100%
+    img
+        width: 100%
+.order-main
+    display: flex
+    width: 100%
+    .content-form-order
+        width: 50%
+        display: flex
+        flex-direction: column
+        background-color: #000
+        padding: 35px 45px
+        align-items: center
+        .top-line-form-order
+            display: flex
+            width: 60%
+            border: 1px solid #ffffff
+            justify-content: space-around
+            padding: 10px
+            margin-bottom: 50px
+            img
+                width: 80px
+                height: 40px
+        .line-form-order
+            width: 60%
+            position: relative
+            overflow: hidden
+            color: #ffffff
+            text-align: center
+            .h1
+                font-family: 'Montserrat'
+                font-weight: 500
+                display: inline-block
+                text-transform: uppercase
+                font-size: 18px
+                &::after
+                    content: ''
+                    position: absolute
+                    background-color: #ffffff
+                    display: inline-block
+                    width: 45%
+                    height: 1px
+                    top: 50%
+                    left: 0
+                &::before
+                    content: ''
+                    position: absolute
+                    background-color: #ffffff
+                    display: inline-block
+                    width: 45%
+                    height: 1px
+                    top: 50%
+                    right: 0
+        .form-order-wrapper
+            text-align: center
+            .top-line-in-form
+                .h1
+                    font-size: 24px
+                    font-style: normal
+                    font-weight: normal
+                    color: #ffffff
+                    font-family: 'Montserrat'
+            input
+                display: inline-block
+                width: 60%
+                border: 1px solid #ff5923
+                height: 48px
+                margin-bottom: 10px
+                background-color: transparent
+                color: #ffffff
+                font-family: 'Montserrat'
+                padding: 0 15px
+                &::placeholder 
+                    color: #ffffff
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: normal
+            .postal-small
+                width: 30%
+            select
+                
+                display: inline-block
+                width: 30%
+                border: 1px solid #ff5923
+                height: 48px
+                background-color: transparent
+                color: #ffffff
+                font-family: 'Montserrat'
+                padding: 0 15px
+                option
+                    background-color: #000000
+                    color: #ffffff
+                    font-family: 'Montserrat'
+                    &:hover
+                        background-color: #ff5923
+            .button-wrapper-order
+                width: 60%
+                text-align: right
+                display: inline-block
+                button
+                    background: #4857DF
+                    border-radius: 5px
+                    color: #ffffff
+                    font-size: 18px
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: bold
+                    padding: 5px 25px
+                    border: none
+                    cursor: pointer
+    .content-product-order
+        width: 50%
+        display: flex
+        flex-direction: column
+        background-color: #171717
+        position: relative
+        .item-order-wrapper
+            display: flex
+            padding: 45px 25px
+            flex-wrap: wrap
+            .image-compos-order
+                width: 320px
+                
+                img
+                    width: 100%
+            .text-order-item
+                color: #ffffff
+                padding: 0 15px
+                .h1-oreder-item
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 28px
+                .qnt-item
+                    font-family: 'Montserrat'
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                .price-discount-item-order
+                    display: flex
+                    
+                    .price-order-item
+                        font-family: 'DigitalNumbers'
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        text-decoration-line: line-through
+                        color: #8C8C8C
+                        margin-right: 15px
+                    .discount-order-item
+                        font-family: 'DigitalNumbers'
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 18px
+                        color: #FF5923
+        .price-wrapper-order
+            text-align: center
+            .price-composition
+                display: inline-block
+                width: 50%
+                div
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    p
+                        font-family: 'Montserrat'
+                        font-style: normal
+                        font-size: 24px
+                        color: #ffffff
+                .sale-remove-order
+                    border-bottom: 1px solid #fff
+                        
+.message-ok
+    text-align: center
+    p
+        font-size: 18px
+        font-family: 'Montserrat'
+        font-style: normal
+        color: #ffffff
+        span
+            color: #FF5923
+
         
 
 
-
+@media (max-width: 1280px)
+    .item-wrapper-product 
+        .text-item-wrapper 
+            .description-wrapper-item
+                width: 250px
+            .last-line-product
+                .discount-price-full
+                    font-size: 18px
+                
+    
 @media (max-width: 820px)
     .link-xs-nav 
         display: block
@@ -532,7 +724,27 @@ section, footer
         display: none
     .nav-footer
         display: none
+    #left-reverse 
+        .image-product
+            width: 330px
+            height: 220px
+            border: none
     
+    .product-wrapper
+        margin: 0 70px
+    .item-wrapper-product
+        .image-product
+            width: 330px
+            height: 220px
+            border: none
+        .text-item-wrapper 
+            .name-wrapper 
+                .h1
+                    font-size: 22px
+        .description-wrapper-item 
+            p
+                font-size: 14px
+
 @media (max-width: 770px)
     .s-clock
         padding: 0 25px 
@@ -560,6 +772,8 @@ section, footer
             p
                 font-size: 15px
 @media (max-width: 680px)
+    .product-wrapper
+        margin: 0 5px
     .main-header 
         .nav-composition
             margin: 0 34px
@@ -593,6 +807,29 @@ section, footer
             p
                 font-size: 16px
                 width: 250px
+    .item-wrapper-product .text-item-wrapper
+        padding-left: 10px
+    .item-wrapper-product .text-item-wrapper .last-line-product .buy-link
+        padding: 5px 20px
+    .item-wrapper-product .text-item-wrapper .last-line-product .price-full
+        font-size: 12px
+    
+    .product-wrapper
+        width: 100%
+    .item-wrapper-product
+        flex-wrap: wrap
+        justify-content: center
+    .item-wrapper-product .image-product
+        width: 70%
+    .item-wrapper-product .text-item-wrapper
+        width: 70%
+        text-align: center
+@media (max-width: 320px)
+    .item-wrapper-product .text-item-wrapper
+        width: 90%
+    .item-wrapper-product .text-item-wrapper .description-wrapper-item
+        width: 100%
+
 @media (min-width: 821px)
     .link-xs-nav 
         display: none
